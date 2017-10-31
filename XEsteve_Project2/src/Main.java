@@ -99,7 +99,7 @@ public class Main {
         }
     }
 
-    public static char[] ASCIItoChar (int[] ASCIIvalues)
+    /*public static char[] ASCIItoChar (int[] ASCIIvalues)
     {
         char[] convChars = new char[ASCIIvalues.length];
 
@@ -108,7 +108,7 @@ public class Main {
             convChars[count] = (char) ASCIIvalues[count];
         }
         return convChars;
-    }
+    }*/
 
 
     /*
