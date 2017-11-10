@@ -1,10 +1,10 @@
 public class Pokemon
 {
-    protected int attack, defense, speed;
-    protected String species;
+    int attack, defense, speed;
+    String species = null;
 
 
-    public Pokemon()
+    public Pokemon(String species)
     {
         species = "";
         attack = species.length() * 4 + 2;
@@ -12,57 +12,65 @@ public class Pokemon
         speed = species.length() * 3 + 5;
 
     }
-
-    public void setAttack(int newAttack)
+    //return species as string
+    public String getSpecies()
     {
-
+        return species;
 
     }
 
+
+    public void setSpecies(String spc)
+    {
+        species = spc;
+    }
+
+    //return attack as int
     public int getAttack()
     {
-
-        return;
+        return attack;
     }
 
-    public void setDefense(int newDefense)
-    {
 
+    public void setAttack(int atk)
+    {
+        this.attack = atk;
 
     }
 
     public int getDefense()
     {
 
-        return;
+        return defense;
     }
 
-    public void setSpeed(int newSpeed)
+    public void setDefense(int def)
     {
-
+        defense = def;
 
     }
 
+    //Return int speed
     public int getSpeed()
     {
-
-        return;
+        return speed;
     }
 
-    public String setSpecies()
+    //Set int speed to new speed
+    public void setSpeed(int spd)
     {
-
-        return;
+        speed = spd;
     }
 
-    public void getSpecies(String newSpecies)
+    /*
+* When called, the evolve method will double the speed stat,
+* triple the attack stat, and multiply the defense stat by 5.
+*/
+    public void evolve(int eAtk, int eDef, int eSpd)
     {
-
-    }
-
-    public void evolve()
-    {
-
+        int evolveAtk = eAtk * 3;
+        int evolveDef = eDef * 5;
+        int evolveSpd = eSpd * 2;
     }
 
 
